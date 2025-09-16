@@ -1,0 +1,163 @@
+{% extends "TSSite/base2.html" %}
+
+{% block content %}
+
+    <div id="top-block">
+
+        <div id="left-side">
+            <table id="left-side-task-info">
+                <tr>
+                    <td class="task-info-title">
+                        создана:
+                    </td>
+                    <td class="task-info-descript">
+                        {{ content.date_creation }}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="task-info-title">
+                        поступила:
+                    </td>
+                    <td class="task-info-descript">
+                        {{ content.date_registration }}
+                    </td>
+                </tr>
+                {% if content.date_deadline %}
+                    <tr>
+                        <td class="task-info-title">
+                            на какую дату:
+                        </td>
+                        <td class="task-info-descript">
+                            {{ content.date_deadline }}
+                        </td>
+                    </tr>
+                {% endif %}
+                <tr>
+                    {% if content.date_execution and content.complited_work %}
+                        <td class="task-info-title">
+                            выполнена:
+                        </td>
+                        <td class="task-info-descript">
+                            {{ content.date_execution }}
+                        </td>
+                    {% else %}
+                        <td class="task-info-descript not-complete" >
+                            не выполнена
+                        </td>
+                    {% endif %}
+                </tr>
+                {% if content.payment_amount %}
+                    <tr>
+                        <td class="task-info-title">
+                            сумма:
+                        </td>
+                        <td class="task-info-descript">
+                            {{ content.payment_amount }}
+                        </td>
+                    </tr>
+                {% endif %}
+
+            </table>
+        </div>
+
+        <div id="right-side">
+            <div id="btn-block">
+                <a href="{% url 'upd_task' task_id %}">
+                    <div class="btn-edit">
+                            ред. заявку
+                    </div>
+                </a>
+                <a href="{% url 'upd_work' task_id %}">
+                    <div class="btn-edit">
+                            ред. работы
+                    </div>
+                </a>
+                <a href="{% url 'del_task' task_id %}">
+                    <div id="btn-delete">
+                            удалить
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="address-block">
+        ул. {{ content.street }} &ensp;д. {{ content.house }}
+        {% if content.apartment %}
+            &ensp;кв. {{ content.apartment }}
+        {% endif %}
+    </div>
+
+    <div id="task-content">
+        <div class="task-descript-row">
+            <div class="task-title">
+                Заявка:
+            </div>
+            <div class="task-descript">
+                {{ content.task }}
+            </div>
+        </div>
+        
+        <div class="task-descript-row">
+            {% if content.complited_work %}
+            <div class="task-title">
+            {% else %}
+            <div class="task-title empty-data">
+            {% endif %}
+                выполненые работы:
+            </div>
+            <div class="task-descript">
+                {{ content.complited_work }}
+            </div>
+        </div>
+        
+        <div class="task-descript-row">
+            {% if content.materials_used %}
+            <div class="task-title">
+            {% else %}
+            <div class="task-title empty-data">
+            {% endif %}
+                материалы:
+            </div>
+            <div class="task-descript">
+                {{ content.materials_used }}
+            </div>
+        </div>
+        
+        <div class="task-descript-row">
+            {% if content.note %}
+            <div class="task-title">
+            {% else %}
+            <div class="task-title empty-data">
+            {% endif %}
+                примечания:
+            </div>
+            <div class="task-descript">
+                {{ content.note }}
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

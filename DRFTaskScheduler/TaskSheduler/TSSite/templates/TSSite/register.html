@@ -1,0 +1,44 @@
+{% extends "TSSite/base.html" %}
+
+{% block auth %}
+
+    <div class="rg-input-space">
+        <form method="post">
+            {% csrf_token %}
+            <div class="lg-input-row1 lg-input-row">
+                <div class="lg-label-block">
+                    <label for="form.username.id_for_label" class="lg-input-label"> {{ form.username.label }} </label>
+                </div>
+                <div class="lg-input-block"> {{ form.username }} </div>
+            </div>
+            <div class="lg-input-row2 lg-input-row">
+                <div class="lg-label-block">
+                    <label for ="form.password1.id_for_label" class="lg-input-label"> {{ form.password1.label }} </label>
+                </div>
+                <div class="lg-input-block"> {{ form.password1 }} </div>
+            </div>
+            <div class="lg-input-row3 lg-input-row">
+                <div class="lg-label-block">
+                    <label for ="form.password2.id_for_label" class="lg-input-label"> {{ form.password2.label }} </label>
+                </div>
+                <div class="lg-input-block"> {{ form.password2 }} </div>
+            </div>
+            <div class="lg-btn-block">
+                <button type="submit" class="rg-btn">зарегестрироваться</button>
+            </div>
+            {% if form.username.errors %}
+                <div class="rg-error">{{ form.username.errors }}</div>
+            {% endif %}
+            {% if form.non_field_errors %}
+                <div class="rg-error"> {{ form.non_field_errors }} </div>
+            {% endif %}
+            {% if form.password1.errors %}
+                <div class="rg-error">{{ form.password1.errors }}</div>
+            {% endif %}
+            {% if form.password2.errors %}
+                <div class="rg-error">{{ form.password2.errors }}</div>
+            {% endif %}
+        </form>
+    </div>
+
+{% endblock %}

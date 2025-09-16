@@ -1,0 +1,548 @@
+[
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Group",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Group",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "permissions",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "importPath": "tutorial.quickstart.serializers",
+        "description": "tutorial.quickstart.serializers",
+        "isExtraImport": true,
+        "detail": "tutorial.quickstart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "GroupSerializer",
+        "importPath": "tutorial.quickstart.serializers",
+        "description": "tutorial.quickstart.serializers",
+        "isExtraImport": true,
+        "detail": "tutorial.quickstart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "TaskSheduler.TSApi.migrations.0001_initial",
+        "description": "TaskSheduler.TSApi.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='TaskElectricalModel',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('date_creation', models.CharField(default='14.04.2025', max_length=10, verbose_name='дата создания')),",
+        "detail": "TaskSheduler.TSApi.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "TaskSheduler.TSApi.migrations.0002_alter_taskelectricalmodel_date_execution",
+        "description": "TaskSheduler.TSApi.migrations.0002_alter_taskelectricalmodel_date_execution",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('TSApi', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='taskelectricalmodel',\n            name='date_execution',\n            field=models.CharField(blank=True, max_length=10, verbose_name='дата выполнения'),\n        ),",
+        "detail": "TaskSheduler.TSApi.migrations.0002_alter_taskelectricalmodel_date_execution",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "TaskSheduler.TSApi.migrations.0003_alter_taskelectricalmodel_apartment_and_more",
+        "description": "TaskSheduler.TSApi.migrations.0003_alter_taskelectricalmodel_apartment_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('TSApi', '0002_alter_taskelectricalmodel_date_execution'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='taskelectricalmodel',\n            name='apartment',\n            field=models.CharField(blank=True, max_length=10, verbose_name='квартира'),\n        ),",
+        "detail": "TaskSheduler.TSApi.migrations.0003_alter_taskelectricalmodel_apartment_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "TsapiConfig",
+        "kind": 6,
+        "importPath": "TaskSheduler.TSApi.apps",
+        "description": "TaskSheduler.TSApi.apps",
+        "peekOfCode": "class TsapiConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'TSApi'",
+        "detail": "TaskSheduler.TSApi.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TaskElectricalModel",
+        "kind": 6,
+        "importPath": "TaskSheduler.TSApi.models",
+        "description": "TaskSheduler.TSApi.models",
+        "peekOfCode": "class TaskElectricalModel(models.Model):\n    # dd.mm.yyyy\n    date_creation = models.CharField(max_length=10, verbose_name=\"дата создания\", default=utils.get_date_str()) # дата создания записи. \n    date_registration = models.CharField(max_length=10, verbose_name=\"дата заявки\", default=utils.get_date_str()) # дата получения заявки. По умолчанию совпадает с датой создания\n    date_execution = models.CharField(max_length=10, verbose_name=\"дата выполнения\", blank=True) # дата выполнения заявки. Если поле пустое - заявка не выполнена\n    city = models.CharField(max_length=250, default=\"Сегежа\", verbose_name=\"город\") # город +\n    street = models.CharField(max_length=250, verbose_name=\"улица\") # улица +\n    house = models.CharField(max_length=10, verbose_name=\"номер дома\") # номер дома. Может быть: 12/2 или 12 к. 2 или 12Б +\n    apartment = models.CharField(max_length=10, verbose_name=\"квартира\", blank=True) # номер квартры. Может быть: 1 или 1А -\n    task = models.TextField(verbose_name=\"заявка\") # заявка +",
+        "detail": "TaskSheduler.TSApi.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "TaskSheduler.TSApi.urls",
+        "description": "TaskSheduler.TSApi.urls",
+        "peekOfCode": "urlpatterns = []",
+        "detail": "TaskSheduler.TSApi.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_date_str",
+        "kind": 2,
+        "importPath": "TaskSheduler.TSApi.utils",
+        "description": "TaskSheduler.TSApi.utils",
+        "peekOfCode": "def get_date_str(date:str|None=None):\n    if not date:\n        date = datetime.datetime.today()\n        return date.strftime(\"%d.%m.%Y\")\nif __name__ == \"__main__\":\n    ...\n    get_date_str()",
+        "detail": "TaskSheduler.TSApi.utils",
+        "documentation": {}
+    },
+    {
+        "label": "Tsts",
+        "kind": 6,
+        "importPath": "TaskSheduler.TSApi.views",
+        "description": "TaskSheduler.TSApi.views",
+        "peekOfCode": "class Tsts(APIView):\n    ...",
+        "detail": "TaskSheduler.TSApi.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.asgi",
+        "description": "TaskSheduler.TaskSheduler.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "TaskSheduler.TaskSheduler.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-av2&5sb96=+mx9%*^8m$yg+-q+)6aq6+(rk%8)q97$0s$uc6#a'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-av2&5sb96=+mx9%*^8m$yg+-q+)6aq6+(rk%8)q97$0s$uc6#a'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'TSApi.apps.TsapiConfig',\n]",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'TaskSheduler.urls'",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "ROOT_URLCONF = 'TaskSheduler.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'TaskSheduler.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'ru'\nTIME_ZONE = 'Europe/Moscow'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "TIME_ZONE = 'Europe/Moscow'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "MEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.settings",
+        "description": "TaskSheduler.TaskSheduler.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "TaskSheduler.TaskSheduler.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.urls",
+        "description": "TaskSheduler.TaskSheduler.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path(\"api-auth/\", include(\"rest_framework.urls\")),\n    path(\"api/\", include(\"TSApi.urls\")),\n] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)",
+        "detail": "TaskSheduler.TaskSheduler.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "TaskSheduler.TaskSheduler.wsgi",
+        "description": "TaskSheduler.TaskSheduler.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "TaskSheduler.TaskSheduler.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "TaskSheduler.manage",
+        "description": "TaskSheduler.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'TaskSheduler.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "TaskSheduler.manage",
+        "documentation": {}
+    }
+]

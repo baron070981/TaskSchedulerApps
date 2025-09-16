@@ -1,0 +1,153 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#top-block{
+    display: flex;
+    width: 100vw;
+}
+
+/* #left-side{
+    min-width: 20vw;
+} */
+
+#left-side-task-info{
+    margin: 0;
+    margin-left: 10px;
+}
+
+#left-side-task-info td{
+    padding: 3px 5px 3px 0;
+}
+
+.task-info-title{
+    text-align: left;
+}
+
+.not-complete{
+    color: red;
+    /* text-align: center; */
+}
+
+
+#right-side{
+    flex-grow: 1;
+    text-align: right;
+}
+
+#btn-block{
+    margin-right: 30px;
+}
+
+#btn-block div{
+    display: inline-block;
+    border-radius: 10px;
+    min-width: 7vw;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.btn-edit{
+    border: 1px solid blue;
+}
+
+.btn-edit:hover{
+    background-color: #D8D8D8;
+    border-color: #0404a3;
+}
+
+#btn-delete{
+    border: 1px solid red;
+}
+
+#btn-delete:hover{
+    border-color: #940404;
+    background-color: red;
+    color: white;
+}
+
+
+
+#address-block{
+    padding: 20px 0 10px 0;
+    border-bottom: 1px solid #D8D8D8;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+#task-content{
+    padding: 10px;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    margin: 10px;
+}
+
+.task-descript-row{
+    border: 1px solid #D8D8D8;
+    margin: 10px;
+    min-height: 50vh;
+    flex-grow: 1;
+    width: 23%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.task-title{
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left:10px;
+}
+
+.empty-data{
+    color: #8C8C8C;
+}
+
+
+@media (max-width: var(--media-max-width)) or (orientation: portrait){
+
+    #btn-block{
+        text-align: right;
+        margin-right: 0;
+        margin-left: 10vw;
+    }
+
+    #btn-block div{
+        display: block;
+        min-width: none;
+        margin-right: 0;
+        width: 25vw;
+        margin: 5px 10px 5px auto;
+    }
+
+    #task-content{
+        display: block;
+        text-align: center;
+    }
+
+    .task-descript-row{
+        display: block;
+        width: 90%;
+        min-height: 200px;
+        margin: 10px auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

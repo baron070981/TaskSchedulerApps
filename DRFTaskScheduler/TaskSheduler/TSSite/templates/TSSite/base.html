@@ -1,0 +1,91 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{{ title }}</title>
+        <link type="text/css" href="{% static 'TSSite/css/basestyle.css' %}" rel="stylesheet">
+        <link type="text/css" href="{% static 'TSSite/css/detail_task.css' %}" rel="stylesheet">
+        <link type="text/css" href="{% static 'TSSite/css/forms_styles.css' %}" rel="stylesheet">
+        <link type="text/css" href="{% static 'TSSite/css/taskslist.css' %}" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style></style>
+    </head>
+<body>
+    {% comment %} Шапка сайта {% endcomment %}
+    <div id="header">
+
+        <div id="header-block"> 
+            {{ head_name }}
+        </div>
+        {% if user.is_authenticated and user.get_group_permissions %}
+            <div class="search-block">
+                <form action="{% url url_search %}" method="get">
+                    <input type="search" type="text" name="q" class="search-street" placeholder="улица или дом">
+                    <button type="submit" class="search-btn">поиск</button>
+                </form>
+            </div>
+        {% endif %}
+        <div id="menu-row">
+            <div id="menu-block">
+                {% if user.is_authenticated and user.get_group_permissions %}
+                    {% for m in menu %}
+                        {% if m.active %}
+                            <div id="punkt-menu"> <a href="{% url m.url_name %}"> {{m.punkt_menu}} </a> </div>
+                        {% else %}
+                            <div id="punkt-menu" class="not-act"> {{m.punkt_menu}} </div>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div id="login-logout-block">
+                {% if user.is_authenticated%}
+                        <span id="username">{{ user.username }}</span> | <a href="{% url 'tssite_logout' %}"> выйти </a>
+                {% else %}
+                        <a href="{% url 'tssite_login' %}"> войти </a> | <a href="{% url 'tssite_register' %}"> регистрация </a>
+                {% endif %}
+            </div>
+        </div>
+        
+
+        <script>
+            const element = document.getElementById("header");
+            var height = element.offsetHeight
+            const root = document.documentElement;
+            root.style.setProperty("--margin-top-content", height+40)
+            console.log("offsetWidth:", height+20)
+        </script>
+
+    </div>
+
+    {% if not user.get_group_permissions %}
+        <div class="not-perms-block">
+            Нет достаточных прав доступа. Обратитесь к администратору.
+        </div>
+    {% endif %}
+
+    {% if user.is_authenticated %}
+        {% if user.get_group_permissions %}
+            <div class="content">
+                {% block content %}
+
+                {% endblock content %}
+            </div>
+        {% else %}
+            <div class="content-not-perm">
+                <div id="warning-text-not-perm">
+                    Не достаточно прав. Обратитесь к администратору.
+                </div>
+            </div>
+        {% endif %}
+    {% else %}
+        {% block auth %}
+
+        {% endblock %}
+    {% endif %}
+
+
+    
+
+</body>

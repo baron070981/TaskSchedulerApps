@@ -1,0 +1,36 @@
+{% extends "TSSite/base.html" %}
+
+{% block auth %}
+
+    <div class="lg-input-space">
+        <form method="post">
+            {% csrf_token %}
+            <div class="lg-input-row1 lg-input-row">
+                <div class="lg-label-block">
+                    <label for="form.username.id_for_label" class="lg-input-label"> {{ form.username.label }} </label>
+                </div>
+                <div class="lg-input-block"> {{ form.username }} </div>
+                <div class="errors-not-fields">{{ form.username.errors }}</div>
+            </div>
+            <div class="lg-input-row2 lg-input-row">
+                <div class="lg-label-block">
+                    <label for ="form.password.id_for_label" class="lg-input-label"> {{ form.password.label }} </label>
+                </div>
+                <div class="lg-input-block"> {{ form.password }} </div>
+                <div class="errors-not-fields">{{ form.password.errors }}</div>
+            </div>
+            <div class="lg-btn-block">
+                <button type="submit" class="lg-btn">войти</button>
+            </div>
+            <div class="lg-error"> {{ form.non_field_errors }} </div>
+        </form>
+    </div>
+
+{% endblock %}
+
+
+
+
+
+
+

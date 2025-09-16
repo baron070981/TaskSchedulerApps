@@ -1,0 +1,5 @@
+{
+    "very-import-ant.output.enable": true,
+    "very-import-ant.removeUnusedImports": false,
+    "very-import-ant.organizeImports": true
+}

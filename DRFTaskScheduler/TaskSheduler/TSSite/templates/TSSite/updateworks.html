@@ -1,0 +1,82 @@
+{% extends "TSSite/base2.html" %}
+
+
+{% block content %}
+
+    <div id="header-address">
+        ул. {{ content.street }}&emsp; д. {{content.house}}
+        {% if content.apartment %}
+            &emsp;кв. {{ content.apartment }}
+        {% endif %}
+    </div>
+    <div id="task-description">
+        {{ content.task }}
+    </div>
+    {% if perms.TSApi.add_taskelectricalmodel or perms.TSApi.change_taskelectricalmodel %}
+    <form action="" method="post">
+        {% csrf_token %}
+
+        <div class="errors-not-fields">{{ form.non_field_errors }}</div>
+
+        <div id="input-space">
+            <div class="input-row">
+                <div class="label-block">
+                    <label for="{{form.date_execution.id_for_label}}"> {{ form.date_execution.label }} </label>
+                </div>
+                <div class="input-block"> {{ form.date_execution }} </div>
+                <div class="errors-not-fields">{{ form.date_execution.errors }}</div>
+            </div>
+            <div class="input-row">
+                <div class="label-block">
+                    <label for="{{form.complited_work.id_for_label}}"> {{ form.complited_work.label }} </label>
+                </div>
+                <div class="input-block"> {{ form.complited_work }} </div>
+                <div class="errors-not-fields">{{ form.complited_work.errors }}</div>
+            </div>
+            <div class="input-row">
+                <div class="label-block">
+                    <label for="{{form.materials_used.id_for_label}}"> {{ form.materials_used.label|lower }} </label>
+                </div>
+                <div class="input-block"> {{ form.materials_used }} </div>
+            </div>
+            <div class="input-row">
+                <div class="label-block">
+                    <label for="{{form.payment_amount.id_for_label}}"> {{ form.payment_amount.label|lower }} </label>
+                </div>
+                <div class="input-block"> {{ form.payment_amount }} </div>
+            </div>
+            <div class="input-row">
+                <div class="label-block">
+                    <label for="{{form.note.id_for_label}}"> {{ form.note.label|lower }} </label>
+                </div>
+                <div class="input-block"> {{ form.note }} </div>
+            </div>
+        </div>
+        <div class="button-save-block">
+            <button type="submit" class="button-save">сохранить</button>
+        </div>
+    </form>
+    {% endif %}
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

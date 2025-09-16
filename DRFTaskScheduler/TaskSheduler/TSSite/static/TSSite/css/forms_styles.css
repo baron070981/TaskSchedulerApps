@@ -1,0 +1,242 @@
+
+/* login logout register */
+
+.lg-input-space{
+    width: 40vw;
+    height: 30vh;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 30vh;
+    box-shadow: var(--boxshadow2);
+    font-size: 1.2em;
+}
+
+.rg-input-space{
+    width: 40vw;
+    height: 40vh;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 21vh;
+    box-shadow: var(--boxshadow2);
+    font-size: 1.2em;
+}
+
+.lg-label-block{
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+.lg-input-block{
+    display: inline-block;
+    margin-left: 10px;
+    /* width: 60%; */
+}
+
+.lg-input-row{
+    margin-bottom: 20px;
+}
+
+.lg-input-row1{
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+}
+
+
+.lg-error{
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #9e0303;
+    margin-top: 10vh;
+    text-align: left;
+    width: 80vw;
+    position: relative;
+    left: -10vw;
+}
+
+.lg-error ul{
+    list-style: none;
+    padding: 0;
+}
+
+.rg-error{
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #9e0303;
+    margin-top: 10vh;
+}
+
+.rg-error ul{
+    list-style: none;
+    padding: 0;
+}
+
+.lg-btn{
+    width: 15%;
+    font-weight: 600;
+    font-size: 0.9em;
+    padding: 4px;
+    background-color: var(--accent-bgcolor3);
+    border-radius: 4px;
+    margin-top: 3vh;
+}
+
+.rg-btn{
+    width: auto;
+    font-weight: 600;
+    font-size: 0.9em;
+    padding: 4px;
+    background-color: var(--accent-bgcolor3);
+    border-radius: 4px;
+    margin-top: 3vh;
+}
+
+.lg-btn:hover, .rg-btn:hover{
+    background-color: #9BCACC;
+}
+
+@media (max-width: 900px) or (orientation: portrait){
+    .lg-input-space{
+        width: 60vw;
+    }
+
+    .rg-input-space{
+        width: 60vw;
+    }
+    
+    .lg-input-row{
+        margin-bottom: 10px;
+    }
+
+    .lg-input-row1{
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+    }
+
+    .lg-label-block{
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+
+    .lg-input-block{
+        display: block;
+    }
+
+    .lg-error{
+        font-size: 1.1em;
+        font-weight: 700;
+        color: #9e0303;
+        margin-top: 10vh;
+        z-index: 1;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        left: -10vw;
+        text-align: left;
+    }
+
+    .lg-error ul{
+        padding: 10px;
+    }
+
+    .lg-btn{
+        width: 20%;
+        margin-bottom: 0;
+        margin-top: 3vh;
+    }
+
+    .rg-btn{
+        width: auto;
+        margin-bottom: 0;
+        margin-top: 3vh;
+    }
+
+}
+
+/* create task */
+
+#header-address{
+    font-size: 1.3em;
+    font-weight: 600;
+    text-align: center;
+}
+
+#task-description{
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#input-space{
+    text-align: center;
+}
+
+.input-row{
+    margin: 30px auto;
+    width: 45vw;
+}
+
+.input-block{
+    margin-top: 5px;
+}
+
+.input-block input{
+    padding: 2px 1px;
+}
+
+.input-text{
+    padding: 7px;
+    columns: 40;
+}
+
+
+.button-save-block{
+    text-align: center;
+    margin: 30px auto;
+}
+
+.button-save{
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.button-save:hover{
+    background-color: #f1f5c2;
+}
+
+
+@media (max-width: var(--media-max-width)) or (orientation: portrait){
+    .input-row{
+        width: 100vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

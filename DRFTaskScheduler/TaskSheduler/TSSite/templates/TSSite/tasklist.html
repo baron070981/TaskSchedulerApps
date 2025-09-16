@@ -1,0 +1,101 @@
+{% extends "TSSite/base.html" %}
+
+{% block content %}
+
+    {% for c in content %}
+        <a href="{% url 'detail_task' c.pk %}">
+        {% if c.date_execution %}
+        <div class="tl-item-task">
+        {% else %}
+        <div class="tl-item-task not-coml-task">
+        {% endif %}
+            <div class="tl-dates">
+                <div class="tl-date"> дата поступления: {{ c.date_registration }} </div>
+                {% if c.date_deadline and not c.date_execution %}
+                    <div class="tl-date"> на какую дату: {{ c.date_deadline }} </div>
+                {% endif %}
+                {% if c.date_execution %}
+                    <div class="tl-date"> дата выполнения: {{ c.date_execution }} </div>
+                {% else %}
+                    <div class="tl-date tl-not-completed"> Не выполнена </div>
+                {% endif %}
+            </div>
+
+            {% if c.payment_amount %}
+                <div class="tl-payment">
+                    сумма: {{ c.payment_amount }} руб.
+                </div>
+            {% endif %}
+        
+            <div class="tl-address">
+                ул. {{c.street}}&emsp;д. {{c.house}}
+                {% if c.apartment %}
+                    &emsp;кв. {{c.apartment}}
+                {% endif %}
+            </div>
+
+            <div class="tl-task">
+                {{ c.task|truncatechars:40 }}
+            </div>
+            <div class="sub-menu">
+                <a href="{% url 'upd_task' c.pk %}">
+                    <div class="sub-menu-btn tl-btn-edit">
+                        ред. заявку
+                    </div>
+                </a>
+                <a href="{% url 'upd_work' c.pk %}">
+                    <div class="sub-menu-btn tl-btn-edit">
+                        ред. работу
+                    </div>
+                </a>
+                <a href="{% url 'del_task' c.pk %}">
+                    <div class="sub-menu-btn delete-btn">
+                        удалить
+                    </div>
+                </a>
+            </div>
+        </div>
+        </a>
+    {% endfor %}
+
+    {% if page_obj.has_other_pages %}
+        <div class="nav-pages">
+            {% if page_obj.has_previous %}
+                <a href="?page=1">
+                    <div class="cont-nav-pages-btn">
+                        <div class="nav-pages-btn">
+                            &lt;&lt;
+                        </div>
+                    </div>
+                </a>
+            {% endif %}
+            {% for p in paginator.page_range %}
+                {% if page_obj.number == p %}
+                    <div class="cont-nav-pages-btn">
+                        <div class="nav-pages-btn nav-pages-btn-selected">
+                            {{ p }}
+                        </div>
+                    </div>
+                {% elif p >= page_obj.number|add:-2 and p <= page_obj.number|add:2 %}
+                    <a href="?page={{ p }}">
+                        <div class="cont-nav-pages-btn">
+                            <div class="nav-pages-btn">
+                                {{ p }}
+                            </div>
+                        </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+            {% if page_obj.has_next%}
+                <a href="?page={{ paginator.num_pages }}">
+                    <div class="cont-nav-pages-btn">
+                        <div class="nav-pages-btn">
+                            &gt;&gt;
+                        </div>
+                    </div>
+                </a>
+            {% endif %}
+        </div>
+    {% endif %}
+
+{% endblock %}

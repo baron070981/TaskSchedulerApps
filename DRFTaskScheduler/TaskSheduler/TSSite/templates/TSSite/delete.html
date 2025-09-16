@@ -1,0 +1,21 @@
+{% extends "TSSite/base2.html" %}
+
+{% block content %}
+
+    {% if perms.TSApi.delete_taskelectricalmodel %}
+    <div id="delete-content">
+        <form action="" method="post">
+            {% csrf_token %}
+        <div id="warning-text">
+            Вы действительно хотите удалить эту заявку?
+        </div>
+        <div id="custom-btn-delete-block">
+            <input type="submit" value="УДАЛИТЬ" id="dl-btn-delete" />
+        </div>
+        </form>
+    </div>
+    {% endif %}
+
+{% endblock %}
+
+
