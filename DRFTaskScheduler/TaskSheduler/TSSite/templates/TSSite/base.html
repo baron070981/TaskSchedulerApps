@@ -22,7 +22,7 @@
         {% if user.is_authenticated and user.get_group_permissions %}
             <div class="search-block">
                 <form action="{% url url_search %}" method="get">
-                    <input type="search" type="text" name="q" class="search-street" placeholder="улица или дом">
+                    <input type="search" type="text" name="q" class="search-street" placeholder="улица, дом или квартира">
                     <button type="submit" class="search-btn">поиск</button>
                 </form>
             </div>

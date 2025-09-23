@@ -40,7 +40,6 @@ class TasksListView(ListView):
     paginate_by = 20
     m = deepcopy(menu)
     m[0]["active"] = False
-    print(menu)
     extra_context = {
             "title": "Список всех заявок",
             "head_name": head_name,
@@ -71,7 +70,7 @@ class SearchListView(ListView):
     def get_queryset(self) -> QuerySet[Any]:
         req = self.request.GET.get("q")
         req = req if not req else req.title()
-        queryset = TaskElectricalModel.objects.filter(Q(street__contains=req) | Q(house=req))
+        queryset = TaskElectricalModel.objects.filter(Q(street__contains=req) | Q(house=req) | Q(apartment=req))
         return queryset
     
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
@@ -116,7 +115,7 @@ class SearchFromCompletedList(ListView):
     def get_queryset(self) -> QuerySet[Any]:
         req = self.request.GET.get("q")
         req = req if not req else req.title()
-        q1 = TaskElectricalModel.objects.filter(Q(street__contains=req) | Q(house=req))
+        q1 = TaskElectricalModel.objects.filter(Q(street__contains=req) | Q(house=req) | Q(apartment=req))
         q2 = q1.filter(date_execution__regex=r"\d\d\.\d\d\.\d\d\d\d")
         return q2
 
@@ -161,7 +160,7 @@ class SearchFromNotCompleted(ListView):
     def get_queryset(self) -> QuerySet[Any]:
         req = self.request.GET.get("q")
         if req: req = req.title()
-        q1 = TaskElectricalModel.objects.filter(Q(street__contains=req) | Q(house=req))
+        q1 = TaskElectricalModel.objects.filter(Q(street__contains=req) | Q(house=req) | Q(apartment=req))
         q2 = q1.exclude(date_execution__regex=r"\d\d\.\d\d\.\d\d\d\d")
         return q2
 

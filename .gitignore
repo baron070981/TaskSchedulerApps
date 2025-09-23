@@ -213,5 +213,6 @@ secret.py
 .vscode
 
 
-
+site_cache/
+migrations/
 
